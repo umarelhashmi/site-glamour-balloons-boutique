@@ -442,9 +442,10 @@ window.GLAMOUR_DATA = {
     ],
     servicesHeading: "💍 Wedding Balloon Décor Services",
     servicesSubheading: "From the “yes” to the “I do,” we bring your vision to life",
+    featuringHeading: "F E A T U R I N G",
     services: [
       {
-        title: "💎 Engagement Celebrations",
+        title: "Engagement Celebrations",
         text: "Celebrate your first “yes” with dreamy backdrops, photo walls, and personalized decor sets designed for proposals or engagement parties."
       },
       {
@@ -650,11 +651,11 @@ window.GLAMOUR_DATA = {
       "assets/images/official/2025_08_6.png"
     ],
     pleaseNote:
-      "🎈Our minimum purchase ensures that every event we take on receives the quality, attention, and detail it deserves. This helps us cover travel, setup, and premium materials so you get a flawless result every time.",
+      "Our minimum purchase ensures that every event we take on receives the quality, attention, and detail it deserves. This helps us cover travel, setup, and premium materials so you get a flawless result every time.",
     serviceDetails: [
-      "✔️On-Site Installation: the Decor must meet the minimum purchase based on travel distance. Installation/Takedown fees are additional and it varies per package.",
-      "✔️Free delivery within 5 miles (for orders over $500) — our treat!",
-      "✔️Custom Packages Available upon request."
+      "On-Site Installation: the Decor must meet the minimum purchase based on travel distance. Installation/Takedown fees are additional and it varies per package.",
+      "Free delivery within 5 miles (for orders over $500) — our treat!",
+      "Custom Packages Available upon request."
     ],
     tiers: [
       {
@@ -917,10 +918,10 @@ window.GLAMOUR_DATA = {
     pickupSummary:
       "🎉 No setup. No delivery fees. All the WOW. 📅 Order 5-7 days in advance | 📍Pickup & Return Location: Kissimmee, FL",
     importantInfo: [
-      "✔️These sets are for RENT and must be returned.",
-      "✔️Rentals are for up to 24–48 hours , depending on your package.",
-      "✔️A refundable security deposit may apply.",
-      "✔️Late returns or damages will incur a fee."
+      "These sets are for RENT and must be returned.",
+      "Rentals are for up to 24–48 hours , depending on your package.",
+      "A refundable security deposit may apply.",
+      "Late returns or damages will incur a fee."
     ],
     bookingInfo:
       "Please place your order at least 5-7 days in advance to ensure theme availability and prep time. Last-minute bookings are not guaranteed and are subject to availability and rush fees.",
@@ -1168,21 +1169,13 @@ window.GLAMOUR_DATA = {
         priceFormatted: "$599.00",
         stockText: "3 in stock",
         category: "Baby Shower",
-        tags: ["baby shower", "balloon garland", "boy", "safari"],
+        tags: ["balloons", "deluxe"],
         productUrl:
           "https://glamourballoonsboutique.com/product/baby-shower-deluxe-decor/",
         image: "assets/images/official/2024_04_1000078962.jpg",
-        shortDescription:
-          "Make your celebration unforgettable with our custom balloon setups! Choose the colors, themes, and extras that match your style. We take care of delivery, setup, and takedown, so you can enjoy a stress-free, picture-perfect event!",
-        included: [
-          "2 Backdrops",
-          "18ft Deluxe Balloon Garland (up to 4 colors) – Latex balloons from 5″ to 24″",
-          "2 Pedestal Tables",
-          "1 Cake Stand",
-          "2 Cute Safari Cutouts",
-          "1 Personalized Name Sign"
-        ],
-        notIncluded: "Setup, takedown and delivery fees."
+        description:
+          "This gorgeous set up includes an approximately 12ft Balloon Garland, 3 cylinder tables, a giant Teddy bear, “Oh Baby” wooden sign, a white “fake” dresser, decorative vases and accessories for the cake and sweets!",
+        note: "Note: The Deluxe Balloon Garland includes 4 different balloon sizes (5″, 9″, 11″ and 18″). Up to 4 colors."
       }
     ]
   },
