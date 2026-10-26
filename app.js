@@ -452,24 +452,23 @@
       return `
         <div style="display:flex;flex-direction:column;border:1px solid var(--rule-hairline);background:var(--porcelain-warm);">
           <div style="padding:0.85rem;">
-            ${mediaFrame(pkg.image, pkg.name, "contain-plate", pkg.name)}
+            ${mediaFrame(pkg.image, pkg.title, "contain-plate", pkg.title)}
           </div>
           <div style="background:var(--mulberry-ink);color:var(--porcelain-pure);padding:0.9rem 1rem;text-align:center;">
-            <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--porcelain-pure);">${esc(pkg.name)}</h3>
-            <p style="font-size:0.8rem;opacity:0.9;margin-top:0.25rem;">${esc(pkg.tagline)}</p>
+            <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--porcelain-pure);">${esc(pkg.title)}</h3>
+            <p style="font-size:0.8rem;opacity:0.9;margin-top:0.25rem;">${esc(pkg.subtitle)}</p>
           </div>
           <div style="padding:1.15rem;display:flex;flex-direction:column;gap:0.65rem;flex:1;">
             <div style="text-align:center;">
-              ${pkg.popular ? `<span style="display:inline-block;font-size:0.72rem;font-weight:700;color:var(--rose-accent);margin-bottom:0.2rem;">POPULAR</span><br/>` : ""}
-              <span class="package-price-figure">$ ${esc(pkg.priceFormatted || pkg.price)}</span>
-              <div style="font-size:0.76rem;color:var(--mulberry-muted);">${esc(pkg.priceSub)}</div>
+              ${pkg.badge ? `<span style="display:inline-block;font-size:0.72rem;font-weight:700;color:var(--rose-accent);margin-bottom:0.2rem;">${esc(pkg.badge)}</span><br/>` : ""}
+              <span class="package-price-figure">$ ${esc(pkg.price === 1150 ? "1,150" : pkg.price)}</span>
+              <div style="font-size:0.76rem;color:var(--mulberry-muted);">Starting at*</div>
             </div>
             <ul class="package-inclusions" style="grid-template-columns:1fr;">
               ${pkg.items.map((it) => `<li>${esc(it)}</li>`).join("")}
             </ul>
             <div style="margin-top:auto;padding-top:0.65rem;text-align:center;font-size:0.74rem;color:var(--mulberry-muted);font-weight:600;">
-              <div>${esc(pkg.promoNote)}</div>
-              <div>${esc(pkg.taxNote)}</div>
+              <div>${esc(pkg.footerNote)}</div>
             </div>
           </div>
         </div>
@@ -479,12 +478,12 @@
     return `
       <section class="page-section" id="page-party-packages" data-page="party-packages">
         <div class="editorial-section">
-          <h1 class="editorial-h1" style="margin-bottom:1rem;">${esc(pp.heroTitle)}</h1>
+          <h1 class="editorial-h1" style="margin-bottom:1rem;">${esc(pp.eyebrow)}</h1>
           <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.75rem;">
             ${socialLinksPair()}
             <div style="max-width:620px;">
-              <h2 class="editorial-h2" style="font-size:1.6rem;margin-bottom:0.35rem;">${esc(pp.heroSubtitle)}</h2>
-              <p style="font-size:0.92rem;color:var(--mulberry-body);margin-bottom:0.45rem;">${esc(pp.urgencyText)}</p>
+              <h2 class="editorial-h2" style="font-size:1.6rem;margin-bottom:0.35rem;">${esc(pp.heading)}</h2>
+              <p style="font-size:0.92rem;color:var(--mulberry-body);margin-bottom:0.45rem;">${esc(pp.intro)}</p>
               <p style="font-size:0.92rem;font-weight:600;color:var(--mulberry-ink);margin-bottom:0.85rem;">${esc(pp.customizableNote)}</p>
               <button type="button" class="btn-primary" data-nav="contact">Customize Your Package</button>
             </div>
@@ -498,13 +497,13 @@
 
           <div class="mosaic-grid-2">
             <div>
-              <h4 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:0.35rem;">ℹ️ ${esc(pp.pleaseNoteTitle)}</h4>
-              <p style="font-size:0.9rem;color:var(--mulberry-body);">📍 ${esc(pp.pleaseNoteText)}</p>
+              <h4 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:0.35rem;">ℹ️ Please Note:</h4>
+              <p style="font-size:0.9rem;color:var(--mulberry-body);">📍 ${esc(pp.pleaseNote)}</p>
             </div>
             <div>
-              <h4 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:0.35rem;">📍 ${esc(pp.serviceDetailsTitle)}</h4>
+              <h4 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:0.35rem;">📍 Service Details</h4>
               <ul class="package-inclusions" style="grid-template-columns:1fr;">
-                ${pp.serviceDetailsBullets.map((b) => `<li>${esc(b)}</li>`).join("")}
+                ${pp.serviceDetails.map((b) => `<li>${esc(b)}</li>`).join("")}
               </ul>
             </div>
           </div>
@@ -513,7 +512,7 @@
         <!-- Classic Party Packages (3-Column Grid) -->
         <div class="editorial-section">
           <h2 class="editorial-h2" style="text-align:center;margin-bottom:0.35rem;">${esc(pp.tiers[0].tierName)}</h2>
-          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[0].tierDescription)}</p>
+          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[0].tierIntro)}</p>
           <div class="mosaic-grid-3">
             ${pp.tiers[0].packages.map(renderPkgCard).join("")}
           </div>
@@ -522,7 +521,7 @@
         <!-- Signature Packages (4-Column Grid) -->
         <div class="editorial-section">
           <h2 class="editorial-h2" style="text-align:center;margin-bottom:0.35rem;">${esc(pp.tiers[1].tierName)}</h2>
-          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[1].tierDescription)}</p>
+          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[1].tierIntro)}</p>
           <div class="mosaic-grid-4">
             ${pp.tiers[1].packages.map(renderPkgCard).join("")}
           </div>
@@ -531,7 +530,7 @@
         <!-- Premium Packages (3-Column Grid) -->
         <div class="editorial-section" style="border-bottom:none;">
           <h2 class="editorial-h2" style="text-align:center;margin-bottom:0.35rem;">${esc(pp.tiers[2].tierName)}</h2>
-          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[2].tierDescription)}</p>
+          <p style="text-align:center;font-size:0.9rem;color:var(--mulberry-body);margin-bottom:1.5rem;">${esc(pp.tiers[2].tierIntro)}</p>
           <div class="mosaic-grid-3" style="margin-bottom:2rem;">
             ${pp.tiers[2].packages.map(renderPkgCard).join("")}
           </div>
