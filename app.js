@@ -801,7 +801,7 @@
             <p style="font-size:0.88rem;color:var(--rose-accent);">Most frequent questions and answers</p>
           </div>
           <div class="mosaic-grid-2" style="margin-bottom:2.5rem;">
-            ${fq.contactPageFaqs
+            ${fq.bookingFaqs
               .map(
                 (f) => `
               <div style="padding:1rem 0;border-bottom:1px solid var(--rule-hairline);">
