@@ -135,7 +135,7 @@
             <a href="https://g.page/r/CRMR3F90h88rEAE/review" target="_blank" rel="noopener" class="btn-secondary">Read More Reviews</a>
           </div>
           <div class="testimonial-columns">
-            ${h.homeReviews
+            ${D.reviews.homeReviews
               .map(
                 (r) => `
               <article class="testimonial-entry">
@@ -174,11 +174,11 @@
       <section class="page-section" id="page-what-we-offer" data-page="what-we-offer">
         <div class="editorial-section">
           <div style="margin-bottom:1rem;">${socialLinksPair()}</div>
-          <h1 class="editorial-h1" style="margin-bottom:0.85rem;">${esc(w.heroHeading)}</h1>
+          <h1 class="editorial-h1" style="margin-bottom:0.85rem;">${esc(w.heading)}</h1>
           <div style="margin-bottom:1rem;">
-            <button type="button" class="btn-primary" data-nav="contact">${esc(w.ctaStartBooking)}</button>
+            <button type="button" class="btn-primary" data-nav="contact">Start Your Booking</button>
           </div>
-          <p class="editorial-lead" style="margin-bottom:1.5rem;font-weight:600;color:var(--champagne-deep);">${esc(w.heroSubheading)}</p>
+          <p class="editorial-lead" style="margin-bottom:1.5rem;font-weight:600;color:var(--champagne-deep);">${esc(w.subheading)}</p>
 
           <div class="mosaic-grid-4" style="margin-bottom:1.5rem;">
             ${mediaFrame("assets/images/official/2026_07_file_00000000908c71f7aff989bcbd0c59cd.png", "car mcqueen balloon decor")}
@@ -188,7 +188,7 @@
           </div>
 
           <p class="editorial-lead" style="margin-bottom:1rem;">${esc(w.introParagraph)}</p>
-          <a href="${esc(D.business.jotformUrl)}" target="_blank" rel="noopener" class="btn-primary">${esc(w.ctaEstimate)}</a>
+          <a href="${esc(D.business.jotformUrl)}" target="_blank" rel="noopener" class="btn-primary">Get An Estimate</a>
         </div>
 
         <!-- 14 Services in a 2-Column Visual Grid (matching orig_what_we_offer.png) -->
