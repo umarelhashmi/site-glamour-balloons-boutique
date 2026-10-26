@@ -235,7 +235,7 @@ window.GLAMOUR_DATA = {
         title: "Wedding Styling",
         description:
           "Creating dreamy wedding moments with soft balloon accents, lush flower walls, and charming sweetheart tables — every detail styled with love and intention.",
-        image: "assets/images/official/2025_07_Wedding-Balloon-Arch-8c.webp",
+        image: "assets/images/official/2025_08_White-and-Black-Simple-Save-the-Date-Announcement-1-1.png",
         actionText: "Explore Weddings",
         targetPage: "wedding-experience"
       },
@@ -251,7 +251,7 @@ window.GLAMOUR_DATA = {
         title: "Tailored Packages",
         description:
           "Whether you’re planning a wedding, milestone birthday, bridal shower, or corporate event, we provide full-service styling with a refined touch and exceptional care.",
-        image: "assets/images/official/2026_02_WhatsApp-Image-2026-02-25-at-5.31.02-PM-e1772058810473.jpeg",
+        image: "assets/images/official/2025_07_Untitled-design-13.png",
         actionText: "See Party Packages",
         targetPage: "party-packages"
       },
@@ -259,7 +259,7 @@ window.GLAMOUR_DATA = {
         title: "Organic Garlands",
         description:
           "In addition to your party decoration, our jaw-dropping Organic Balloon Garlands will get everyone’s attention!",
-        image: "assets/images/official/2026_07_ChatGPT-Image-Jul-14-2026-10_30_26-PM.png",
+        image: "assets/images/official/2025_07_2-5-e1754952063758.png",
         actionText: "Get An Estimate",
         externalUrl: "https://form.jotform.com/231267394244155"
       },
@@ -504,64 +504,6 @@ window.GLAMOUR_DATA = {
           "On-site professional setup and takedown",
           "Personalized consultation to align the design perfectly with your vision",
           "Travel fee: to be calculated"
-        ]
-      },
-      {
-        id: "wedding-elegant-entry",
-        title: "The Elegant Entry",
-        subtitle: "Perfect for intimate ceremonies or micro-weddings",
-        image: "assets/images/official/2025_07_Lux-01-8-e1752704691922.png",
-        gallery: [
-          "assets/images/official/2025_07_Lux-01-8-e1752704691922.png",
-          "assets/images/official/2025_07_Lux-01-3-e1752699038829.png",
-          "assets/images/official/2025_07_Lux-01-10.png"
-        ],
-        description: "One Arch Stand (different styles available).",
-        items: [
-          "Examples: Elegant Balloon Hoop With Drapes, 6.6ft Half Deluxe Chiara Backdrop, 6.6ft Romantic Heart Arch With Balloons",
-          "Up to a total of 10ft Deluxe Balloon Garland",
-          "Custom color palette (up to 3 colors)",
-          "Optional floral or greenery accents (additional costs apply)"
-        ]
-      },
-      {
-        id: "wedding-classic-romance",
-        title: "The Classic Romance",
-        subtitle: "A romantic upgrade with two backdrops and florals",
-        image: "assets/images/official/2025_07_Lux-01-2.png",
-        items: [
-          "Full Organic Balloon Garland (latex balloons from 5” to 24”) – Up to 4 colors.",
-          "Two Backdrops (6.6ft and 6ft)",
-          "Coordinating floral or pampas accents",
-          "One Pedestal Table",
-          "Neon signage (restrictions apply)"
-        ]
-      },
-      {
-        id: "wedding-luxe-celebration",
-        title: "The Luxe Celebration",
-        subtitle: "For couples seeking a full visual transformation with two focal points",
-        image: "assets/images/official/2025_07_Lux-01-5-e1752702732707.png",
-        items: [
-          "Full Organic Balloon Garland (latex balloons from 5” to 24”) – Up to 4 colors",
-          "Balloon wall (8x8ft or similar) for photo backdrop – Up to 4 colors",
-          "Custom signage (restrictions apply)",
-          "One pedestal table",
-          "Florals or greenery accents"
-        ]
-      },
-      {
-        id: "wedding-bespoke",
-        title: "The Bespoke Wedding Experience – Custom Quote",
-        subtitle: "Fully tailored to your venue, theme, and vision",
-        image: "assets/images/official/bespoke-wedding-balloon-redrawn.png",
-        items: [
-          "On-site consultation",
-          "Custom design proposal",
-          "Full venue transformation with multiple balloon installations",
-          "Integration with florals, draping, signage & furniture",
-          "Coordination with planner or vendor team",
-          "Priority service & premium materials throughout"
         ]
       }
     ]
